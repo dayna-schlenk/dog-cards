@@ -1,0 +1,88 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  margin: 3rem;
+  text-align: center;
+}
+
+h1 .paw-icon {
+  color: #93a378;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  padding: 0 1rem;
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 1rem;
+  cursor: pointer;
+}
+
+main .card {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+main .card:nth-of-type(1) {
+  background: #6c7a54;
+}
+
+main .card:nth-of-type(2) {
+  background: #79895e;
+}
+
+main .card:nth-of-type(3) {
+  background: #879969;
+}
+
+main .card:nth-of-type(4) {
+  background: #93a378;
+}
+
+main .card:nth-of-type(5) {
+  background: #9fad87;
+}
+
+main .card:nth-of-type(6) {
+  background: #abb796;
+}
+
+main .card:nth-of-type(7) {
+  background: #b7c1a5;
+}
+
+main .card:nth-of-type(8) {
+  background: #c3ccb4;
+}
+
+main .card:nth-of-type(9) {
+  background: #cfd6c3;
+}
+
+main .card:nth-of-type(10) {
+  background: #dbe0d2;
+}
+
+main .card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+main .card img {
+  width: 100%;
+}
+
+main .card .info {
+  padding: 1rem;
+}
+/*# sourceMappingURL=main.css.map */

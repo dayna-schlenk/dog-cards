@@ -1,0 +1,50 @@
+$colors: #6c7a54, #79895e, #879969, #93a378, #9fad87, #abb796, #b7c1a5, #c3ccb4, #cfd6c3, #dbe0d2;
+
+body, html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    margin: 3rem;
+    text-align: center;
+
+    .paw-icon {
+        color: #93a378;
+    }
+}
+
+main {
+    display: grid;
+    padding: 0 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 1rem;
+    cursor: pointer;
+
+    .card {
+
+        transition: transform 0.3s;
+
+        @for $i from 1 through 10 {
+            &:nth-of-type(#{$i}) {
+                background: nth($colors, $i);
+            }
+        }
+
+        &:hover {
+            transform: translateY(-10px);
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .info {
+            padding: 1rem;
+        }
+    }
+}
